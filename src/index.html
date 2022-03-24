@@ -1,27 +1,207 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/styles/estilos.scss">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <header>
+        <div class="header__div1">
+            <a name="inicio"></a>
+            <img class="header__foto" src="/src/assets/images/josegorra.jpg" alt="Mi foto con gorra de marinero">
+            <h1 class="header__h1">Curriculum Vitae de José Miguel Esteban Lupiañez</h1>
+            <img class="header__logo" src="/src/assets/images/logo.png" alt="logo UOC">
+        </div>
+        <div class="header__div2">
+            <nav>
+                <ul class="menu">
+                    <li class="menu__li menu__li--hover"><a class="a" href="#presentacion">Presentación</a></li>
+                    <li class="menu__li menu__li--hover"><a class="a" href="#dpers">Datos Personales</a> </li>
+                    <li class="menu__li menu__li--hover"><a class="a" href="#expprof">Experiencia Professional</a> </li>
+                    <li class="menu__li menu__li--hover"><a class="a" href="#treglada">Titulación reglada</a> </li>
+                    <li class="menu__li menu__li--hover"><a class="a" href="#tnoreglada">Titulación no reglada</a> </li>
+                    <li class="menu__li menu__li--hover"><a class="a" href="#idiomas">Idiomas</a> </li>
+                    <li class="menu__li menu__li--hover"><a class="a" href="#aficiones">Aficiones</a> </li>
+                </ul>
+            </nav>
+        </div>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    </header>
+    <main class="main">
+        <section class="presentacion fondo-gris">
+            <h2 class="h2"><a name="presentacion">Presentación</a></h2>
+            <div class="div1">
+                <h3>Descripción</h3>
+                <p>La PEC consta de dos partes, que básicamente se configuran en desarrollo y documentación. Es necesario realizar y entregar ambas partes de la PEC para poder ser evaluado.</p>
+                <p class="texto-resaltado">En la parte de desarrollo:</p>
+                <p>deberás elaborar un sitio web que siga las características que se especifican a continuación:</p>
+                <ul class="lista-desordenada">
+                    <li>Debe ser un sitio web de una sola página.</li>
+                    <li>El contenido de la página debe ser tu Currículum Vitae. Si quieres realizar la PEC sobre cualquier otra temática que cumpla el resto de requisitos del enunciado, debes pedir la aprobación del profesor consultor por correo electrónico antes del 11 de marzo de 2022.</li>
+                    <li>La página debe ser responsive y se debe poder visualizar correctamente desde cualquier dispositivo moderno (teléfono, tablet, ordenador…).</li>
+                    <li>Debes partir de UOC Boilerplate para tu desarrollo. Asegúrate de estar usando la última versión (en el momento de escribir este enunciado, la última versión es la 3.4.0). Debes respetar la estructura y nomenclatura de carpetas y ficheros (¡a menos que la metodología o guía de estilo escogida te indique lo contrario!). Tienes toda la información sobre la instalación y uso en la guía del módulo 1</li>
+                    <li>Debes añadir alguna dependencia externa a UOC Boilerplate. En la guía del módulo 1 tienes como ejemplo cómo añadir FontAwesome, que puede ser una dependencia válida para este ejercicio. Pero si te atreves, puedes probar a añadir cualquier otra dependencia que creas útil. Si escoges otra dependencia, es buena idea que expliques en el foro cuál es, por qué la escogiste, y si tienes cualquier duda o incidencia con su uso.</li>
+                    <li>Debes escoger una o más de las metodologías y guías de estilo estudiadas en el módulo 2 y aplicarlas en tu desarrollo. Puedes debatir en el foro cuáles son las opciones más adecuadas.</li>
+                    <li>Deberás instalar Stylelint y personalizar su configuración para que aplique los criterios de estilos escogidos, con plugins y reglas personalizadas, como se explica en el módulo 2. Al ejecutar el comando de validación no debe aparecer ningún error. También puedes comentar en el foro qué plugins y reglas aplicaste.</li>
+                    <li>Debes utilizar necesariamente las siguientes características de Sass: variables, anidado, funciones, parciales y importación.</li>
+                    <li>Una vez finalices el desarrollo debes publicar el código en GitHub y realizar un deployment en Netlify, como se explica en la guía del módulo 1.</li>
+                </ul>
+                <p>A parte de estos requisitos mínimos, puedes ampliar tu proyecto como lo creas oportuno.</p>
+                <p>El código que entregues deberá estar compilado para producción con el comando npm run build.</p>
+                <p class="texto-resaltado">En la parte de documentación:</p>
+                <ul>
+                    <li>Deberás documentar todo el proceso de desarrollo de esta práctica (descargar/clonar el repositorio, instalar dependencias, el entorno de desarrollo, la compliación para producción, la publicación, etc), explicando los pasos que seguiste y los resultados obtenidos.</li>
+                    <li>Deberás justificar la elección de metodología y/o guía de estilo en base al tipo de encargo, tus conocimientos, la metodología de desarrollo aplicada y la avenencia de los conceptos estudiados con el proyecto y tu estilo de código. Deberás explicar detalladamente cómo aplicaste los criterios escogidos a tu código, así como la configuración que realizaste en Stylelint para que se aplicaran estos criterios.</li>
+                    <li>Deberás explicar cualquier decisión de diseño y desarrollo que tomaras (por ejemplo: qué dependencias añadiste, si en tus hojas de estilo seguiste una aproximación desktop first o mobile first, …).</li>
+                    <li>Deberás incluír de forma clara los enlaces al repositorio de GitHub y la URL pública de Netlify.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="h2"><a name="dpers">Datos Personales</a></h2>
+            <div class="div">
+                <p class="col1">Nombre y Apellidos:</p>
+                <p class="col2">José Miguel Esteban Lupiañez</p>
+            </div>
+            <div class="div">
+                <p class="col1">Dirección:</p>
+                <p class="col2">Carrer d’en Pep Ventura, 11 2-1, Martorell</p>
+            </div>
+            <div class="div">
+                <p class="col1">Teléfono:</p>
+                <p class="col2">678338335</p>
+            </div>
+            <div class="div">
+                <p class="col1">Correo electrónico:</p>
+                <p class="col2">jestebanl@uoc.edu</p>
+            </div>
+            <div class="div">
+                <p class="col1">Fecha de nacimiento:</p>
+                <p class="col2">17-07-1956</p>
+            </div>
+            <div class="div">
+                <p class="col1">Nacionalidad:</p>
+                <p class="col2">Española</p>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="h2"><a name="expprof">Experiencia Profesional</a></h2>
+            <div class="div">
+                <p class="col1">Abril 1971-Enero 1977</p>
+                <p class="col2">Munipresa SA (Programador)
+                </p>
+            </div>
+            <div class="div">
+                <p class="col1">Marzo 1978-Octubre 1982:</p>
+                <p class="col2">Regentando kiosco de prensa</p>
+            </div>
+            <div class="div">
+                <p class="col1">Noviembre 1982-Septiembre-1985:</p>
+                <p class="col2">IMPD (Ajuntament de Barcelona Nou Barris)</p>
+            </div>
+            <div class="div">
+                <p class="col1">Octubre 1985-Octubre 1990:</p>
+                <p class="col2">IMPD (Ajuntament de Barcelona Sants)</p>
+            </div>
+            <div class="div">
+                <p class="col1">Enero 1992-Octubre 1993:</p>
+                <p class="col2">CGT Profesor ofimática</p>
+            </div>
+            <div class="div">
+                <p class="col1">Noviembre 1990-Diciembre 2005:</p>
+                <p class="col2">IMPD (Ajuntament de Barcelona)
+                </p>
+            </div>
+            <div class="div">
+                <p class="col1">Octubre 1997-Enero 1999:</p>
+                <p class="col2">Speedmatic SL</p>
+            </div>
+            <div class="div">
+                <p class="col1">Enero 2006-Junio 2011:</p>
+                <p class="col2">Ajuntament de Barcelona - Imprenta Municipal</p>
+            </div>
+            <div class="div">
+                <p class="col1">Julio 2011-presente:</p>
+                <p class="col2">Pensionista por Gran Invalidez</p>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="h2"><a name="treglada">Titulación reglada</a></h2>
+            <div class="div">
+                <p class="col1">Ingeniero Técnico Informática de G.
+                    :</p>
+                <p class="col2">Universitat Oberta de Catalunya (UOC)</p>
+            </div>
+            <div class="div">
+                <p class="col1">Bachiller superior:</p>
+                <p class="col2">Institut Narcis Monturiol</p>
+            </div>
+            <div class="div">
+                <p class="col1">Estudios primarios:</p>
+                <p class="col2">ANIC</p>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="h2"><a name="tnoreglada">Titulación no reglada</a></h2>
+            <div class="div">
+                <p class="col1">UOC:</p>
+                <p class="col2">Técnica posicionamiento web</p>
+            </div>
+            <div class="div">
+                <p class="col1">UOC:</p>
+                <p class="col2">Estrategias de marketing web</p>
+            </div>
+            <div class="div">
+                <p class="col1">Microsoft:</p>
+                <p class="col2">Experto Word 2000</p>
+            </div>
+            <div class="div">
+                <p class="col1">Microsoft:</p>
+                <p class="col2">Experto Excel 2000</p>
+            </div>
+            <div class="div">
+                <p class="col1">Leiter:</p>
+                <p class="col2">Analista de Sistemas</p>
+            </div>
+            <div class="div">
+                <p class="col1">Leiter:</p>
+                <p class="col2">Programador Cobol</p>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="h2"><a name="idiomas">Idiomas</a></h2>
+            <div class="div">
+                <p class="col1">Ingles:</p>
+                <p class="col2">Nivel técnico informático</p>
+            </div>
+            <div class="div">
+                <p class="col1">Frances:</p>
+                <p class="col2">Bachillerato</p>
+            </div>
+            <div class="div">
+                <p class="col1">Catalan:</p>
+                <p class="col2">Nivel hablado y escrito</p>
+            </div>
+            <div class="div">
+                <p class="col1">Castellano:</p>
+                <p class="col2">Nivel hablado y escrito</p>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="h2"><a name="aficiones">Aficiones</a></h2>
+            <div class="div">
+                <p class="col1">CE Sant Martí:</p>
+                <p class="col2">Ajedrez</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="centrado">&copy; Universitat Oberta de Catalunya</p>
+        </div>
+    </footer>
+</body>
 </html>

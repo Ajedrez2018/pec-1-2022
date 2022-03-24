@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*El archivo importado recoge todos los 
+estilos CSS necesarios para la web*/
+/*Importo las variables de un solo fichero*/
+/**************************************************
+En este archivo definiré las variables para la web.
+***************************************************/
+/*Fuentes*/
+/*Tipografias*/
+/*Colores*/
+/*Importo las clases básicas de un solo fichero*/
+/*En este archivo recojo los estilos generales
+aplicados directamente a etiquetas HTML*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  display: block;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 99%;
+  margin: 0 10px;
+  background-color: #a79e9e;
+  padding: 5px;
+  top: 0%;
+}
+
+body {
+  background-color: white;
+  width: 100%;
+}
+
+footer {
+  height: 50px;
+  padding: 5px;
+  width: 100%;
+  margin: 5px;
+  background-color: #000000;
+  color: white;
+  font-size: 30px;
+}
+
+/*Importo las media-query de un solo fichero*/
+/*******************************
+Pantalla grande, de 1329px o más
+*******************************/
+@media screen and (min-width: 1329px) {
+  .main {
+    width: 90%;
+    margin: 1em auto;
+  }
+}
+/*********************************
+Pantalla normal, de 961px a 1328px
+pantallas normales, portatiles o 
+tablets en horizontal
+*********************************/
+@media screen and (min-width: 961px) and (max-width: 1328px) {
+  .main {
+    width: 85%;
+    margin: 1em auto;
+  }
+}
+/****************************************
+Pantalla pequeña, móviles en horizontal o
+tablets en vertical, hasta 960px.
+****************************************/
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .main {
+    width: 75%;
+    margin: 1em auto;
+  }
+}
+/***********************************
+Pantalla pequeña, principalmente
+móviles en vertical
+***********************************/
+@media screen and (max-width: 480px) {
+  .main {
+    width: 65%;
+    margin: 1em auto;
+  }
+}
+/*Importo el resto de clases de un solo fichero*/
+.presentacion {
+  background-color: #ffffff;
+  width: 99%;
+  border: 1px solid #a9a9a9;
+  border-radius: 1em;
+  box-shadow: 2px 2px 6px #dedede;
+  height: 155vh;
+  margin: 1.2em auto;
+  padding: 1em;
+}
+
+.section {
+  background-color: #ffffff;
+  width: 99%;
+  border: 1px solid #a9a9a9;
+  border-radius: 1em;
+  box-shadow: 2px 2px 6px #dedede;
+  height: 50vh;
+  margin: 1.2em auto;
+  padding: 1em;
+}
+
+.texto-resaltado {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.div1 {
+  height: auto;
+}
+
+.header__div {
+  display: flex;
+  width: 100%;
+}
+
+.header__foto {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 50px;
+}
+
+.header__logo {
+  margin-top: 20px;
+  margin-left: auto;
+  height: 100px;
+}
+
+.header__h1 {
+  font-family: "Arial", verdana, sans-serif;
+  padding-left: 150px;
+  margin-top: 60px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.menu__li {
+  list-style: none;
+  width: 100px;
+  text-align: center;
+  background-color: #ffe4c4;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+}
+
+.menu__li--hover:hover {
+  background-color: #e0b276;
+}
+
+.main {
+  position: absolute;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  top: 7.5em;
+}
+
+.fondo-gris {
+  background-color: #cfc6c6;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col1 {
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

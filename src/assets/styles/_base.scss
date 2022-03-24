@@ -1,0 +1,35 @@
+/*En este archivo recojo los estilos generales
+aplicados directamente a etiquetas HTML*/
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header{
+  display: block;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 99%;
+  margin: 0 10px;
+  background-color: $color-secundario; //uso de una variable
+  padding: 5px;
+}
+
+body{
+  background-color: $color-principal; //uso de una variable
+  width: 99%;
+}
+
+footer{
+  display: block;
+  height: 50px;
+  padding: 5px;
+  width: 99%;
+  margin: 0 10px;
+  background-color: $color-negro; //uso de una variable
+  color: $color-principal; //uso de una variable
+  font-size: 30px;
+}

@@ -1,0 +1,11 @@
+/*Importo las variables de un solo fichero*/
+@import "variables";
+
+/*Importo las clases básicas de un solo fichero*/
+@import "base";
+
+/*Importo las media-query de un solo fichero*/
+@import "media";
+
+/*Importo el resto de clases de un solo fichero*/
+@import "layout";

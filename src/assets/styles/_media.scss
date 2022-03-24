@@ -1,0 +1,38 @@
+/*********************************
+Pantalla normal, de 961px a 1328px
+pantallas normales, portatiles o 
+tablets en horizontal
+*********************************/
+@media screen and (min-width: 961px) and (max-width: 1328px) {
+  .header__div1 {
+    display: flex;
+    font-size: 95%;
+  }
+}
+
+/****************************************
+Pantalla pequeña, móviles en horizontal o
+tablets en vertical, hasta 960px.
+****************************************/
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .header__div1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 75%;
+  }
+  .header__foto {
+    align-content: center;
+  }
+}
+
+/***********************************
+Pantalla pequeña, principalmente
+móviles en vertical
+***********************************/
+@media screen and (max-width: 480px) {
+  .header__div1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 50%;
+  }
+}
