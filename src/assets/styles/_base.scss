@@ -1,6 +1,5 @@
 /*En este archivo recojo los estilos generales
 aplicados directamente a etiquetas HTML*/
-
 *{
   margin: 0;
   padding: 0;
@@ -21,6 +20,7 @@ header{
 body{
   background-color: $color-principal; //uso de una variable
   width: 99%;
+  font-size: 30px;
 }
 
 footer{
@@ -31,5 +31,4 @@ footer{
   margin: 0 10px;
   background-color: $color-negro; //uso de una variable
   color: $color-principal; //uso de una variable
-  font-size: 30px;
 }

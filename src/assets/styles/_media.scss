@@ -4,9 +4,24 @@ pantallas normales, portatiles o
 tablets en horizontal
 *********************************/
 @media screen and (min-width: 961px) and (max-width: 1328px) {
+  /*Cabecera*/
+  /*Primera linea*/
   .header__div1 {
     display: flex;
-    font-size: 95%;
+  }
+
+  /*Cuerpo de web*/
+  .section {
+    font-size: $grande; //uso de una variable
+  }
+
+  .presentacion {
+    font-size: $grande;
+  }
+
+  /*Pie de página*/
+  .fuente {
+    font-size: $grande; //uso de una variable
   }
 }
 
@@ -15,13 +30,38 @@ Pantalla pequeña, móviles en horizontal o
 tablets en vertical, hasta 960px.
 ****************************************/
 @media screen and (min-width: 481px) and (max-width: 960px) {
+  /*Cabecera*/
+  /*Primera linea*/
   .header__div1 {
     display: flex;
-    flex-direction: column;
-    font-size: 75%;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-size: $normal; //uso de una variable
   }
+  .header__logo{
+    align-content: center;
+  }
+
+  .header__h1 {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
   .header__foto {
     align-content: center;
+  }
+
+  .presentacion {
+    font-size: $normal;
+  }
+
+  .section {
+    font-size: $normal; //uso de una variable
+  }
+
+  .fuente {
+    font-size: $normal; //uso de una variable
   }
 }
 
@@ -30,9 +70,29 @@ Pantalla pequeña, principalmente
 móviles en vertical
 ***********************************/
 @media screen and (max-width: 480px) {
+  /*Cabecera*/
+  /*Primera linea*/
+
   .header__div1 {
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: $pequena; //uso de una variable
+  }
+  /*Segunda linea o menú*/
+  .menu {
     flex-direction: column;
-    font-size: 50%;
+  }
+
+  .section {
+    font-size: $pequena; //uso de una variable
+  }
+
+  .presentacion {
+    font-size: $pequena;
+  }
+
+  .fuente {
+    font-size: $pequena; //uso de una variable
   }
 }
